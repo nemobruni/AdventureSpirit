@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactos</title>
+    <link rel='stylesheet' href="./style.css"/>
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body class="body-contactos">
+
+    <header id="navbarContainer">
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <label class="logo">Adventure Spirit</label>
+            <ul>
+                <li><a class='active' href="index.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+       <!--  <nav>
+          <ul id="navbarList">
+            <img id="logo" src="./img/pngwing.com.png" alt="logo" />
+            <li><a href="index.html">HOME</a></li>
+          <li><a href="contacto.html">CONTACTOS</a></li>
+          <li><a href="about_us.html">ACERCA DE NOSOTROS</a></li>
+          </ul>
+        </nav> -->
+      </header>
+
+
+
+    <div class="cuadro-contactos">
+        <fieldset id="fondoContactos">
+            
+        
+            
+            <legend>Datos de contacto</legend>
+            
+            <form action="">
+                <div class="cuadro2">
+                    <br>
+                    <div class="datos">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre"></input>
+                    </div><br>
+                    <div>
+                        <label for="Genero">Genero</label>
+                        <select name="genero" >
+                            <option value="mujer">Mujer</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <br>
+                <div>
+                    <label for="Email">E-mail</label>
+                    <input type="email" name="email" required>
+                    </div><br>
+                    <div>
+                        <label for="tel">Tel</label>
+                        <input type="number" name="number" required>
+                        </div><br>
+
+                        <div>
+                            <label for="viajes">Destino de interés</label>
+                            <select name="viajes" >
+                                <option value="Alemania">Berlín, Alemania</option>
+                                <option value="Francia">París, Francia</option>
+                                <option value="Inglaterra">Londres, Inglaterra</option>
+                                
+                            </select>
+                        </div>
+
+                        <br>
+                        <div>
+                            <label for="acepta">Acepta terminos y condiciones</label>
+                            <input type="checkbox" name="acepta" value="1">
+                            
+                        </div><br>
+                        
+                        <br>
+                        <div>
+                            <label for="si_no">¿Le sirvio esta informacion?</label>
+                            <select name="si_no" >
+                                <option value="si">Si</option>
+                                <option value="No">No</option>
+                                
+                            </select>
+                        </div>
+                        <br><br>
+                        <div >
+                            <label for="comentarios">Dejanos un comentario</label>
+                            <br><br>
+                            <textarea class="textarea " name="comentarios" cols="100" rows="10" placeholder="Escribe tus comentarios"></textarea>
+                        </div>
+                        
+                        <br><br>
+                        <div></div>
+                        
+                        
+    
+                </div>
+            </form>
+        </fieldset>
+
+    </div>
+
+
+
+    <footer class="footer">
+  
+        <h5>Contacto: </h5>
+        <span>E-mail : Cosme_fulanito@gmail.com</span>
+        <span>Tel: +54 1169852334</span>
+      </footer>
+</body>
+</html>

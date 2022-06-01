@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background: #0082e62a;
+    height: 80px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+a.active, a:hover {
+    background: #1b9bff;
+    transition: 1s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right; 
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+/**MOVIL**/
+@media (max-width: 400px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 16px;
+        
+    }
+    nav ul li a{
+        font-size: 16px;
+        
+}
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1b4332;
+    top: 80px;
+    left: -100%;
+    transition: all 2s;
+}
+nav ul li {
+    margin: 50px 0;
+    line-height: 80px;
+    margin-left: -150px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+a:hover, a.active{
+    background: none;
+    color: #0082e6;
+}
+#check:checked ~ ul{
+    left: 0;  
+}
+
+
+    
+
+@media(max-width: 858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1b4332;
+        top: 80px;
+        left: -100%;
+        transition: all 2s;
+    }
+    nav ul li {
+        margin: 50px 0;
+        line-height: 80px;
+        margin-left: -150px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;  
+    }
+
+
+}
+}
