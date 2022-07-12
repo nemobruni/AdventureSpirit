@@ -1,16 +1,10 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url("./img/6774512.jpg");
+  background-image: url("../img/6774512.jpg");
   background-size: cover;
 }
 
-/* #navbarContainer {
-  background-color: #c1d9fd8e;
-  height: 50px;
-  border-radius: 20px;
-}
- */
 .titulo {
   text-align: center;
   color: white;
@@ -239,7 +233,7 @@ body {
 #cuadrado-aboutUs {
   width: 80vw;
   height: 80vh;
-
+  padding: 40px;
   border-radius: 10px;
   margin: auto;
   margin-top: 20px;

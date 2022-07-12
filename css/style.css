@@ -1,16 +1,8 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url("./img/6774512.jpg");
-  background-size: cover;
-}
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url("../img/6774512.jpg");
+  background-size: cover; }
 
-/* #navbarContainer {
-  background-color: #c1d9fd8e;
-  height: 50px;
-  border-radius: 20px;
-}
- */
 .titulo {
   text-align: center;
   color: white;
@@ -19,59 +11,49 @@ body {
   word-spacing: 50px;
   text-shadow: 0px 0px 2px white;
   animation: cambio-color 2s infinite, aparicion 6s;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @keyframes cambio-color {
   0% {
     color: white;
-    text-shadow: 0px 0px 2px white;
-  }
+    text-shadow: 0px 0px 2px white; }
   50% {
     color: white;
-    text-shadow: 0px 0px 12px white;
-  }
+    text-shadow: 0px 0px 12px white; }
   100% {
     color: white;
-    text-shadow: 0px 0px 2px white;
-  }
-}
+    text-shadow: 0px 0px 2px white; } }
+
 @keyframes aparicion {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 #navbarList {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
+
 #navbarList li a {
   color: white;
   font-weight: 600;
   font-size: 20px;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 #navbarList li:hover {
   background-color: #1282a2;
   transform: scale(1.2);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-}
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); }
 
 #logo {
   width: 50px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 #cuadrado {
   width: 80vw;
   height: 1100px;
-  
   border-radius: 10px;
   margin: auto;
   margin-top: 20px;
@@ -80,56 +62,51 @@ body {
   grid-template-columns: 29.3% 29.2% 29.3%;
   grid-template-rows: one;
   justify-items: center;
-
   align-items: center;
   justify-content: space-around;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 .card {
   display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 210px 210px 80px;
   grid-template-areas: "image" "text" "stats";
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-radius: 18px;
   background-color: white;
-  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  box-shadow: 5px 5px 15px black;
   text-align: center;
   width: 300px;
-
   transition: 0.5s ease;
   cursor: pointer;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 .card-img {
   grid-area: image;
-
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-size: cover;
-}
+  background-size: cover; }
+
 .card-text {
   grid-area: text;
-  margin: 25px;
-}
+  margin: 25px; }
+
 .card-text .date {
-  color: rgb(255, 7, 110);
-  font-size: 13px;
-}
+  color: #ff076e;
+  font-size: 13px; }
+
 .card-text .parrafo {
   color: grey;
   font-size: 15px;
-  font-weight: 300;
-}
+  font-weight: 300; }
+
 .card-text .h2 {
   margin-top: 0px;
-  font-size: 28px;
-}
+  font-size: 28px; }
+
 .card-stats {
-  grid-area: stats;
-}
+  grid-area: stats; }
+
 .card-stats {
   grid-area: stats;
   display: grid;
@@ -137,8 +114,7 @@ body {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: rgb(170, 7, 108);
-}
+  background-color: #aa076c; }
 
 .card-stats .stat {
   display: flex;
@@ -146,28 +122,28 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  color: white;
-}
+  color: white; }
+
 .card-stats .type {
   font-size: 11px;
   font-weight: 300;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+
 .card.stats .value {
   font-size: 22px;
-  font-weight: 500;
-}
+  font-weight: 500; }
+
 .card-stats .border {
-  border-left: 1px solid rgb(172, 26, 87);
-  border-right: 1px solid rgb(172, 26, 87);
-}
+  border-left: 1px solid #ac1a57;
+  border-right: 1px solid #ac1a57; }
+
 .card-stats .value sup {
-  font-size: 12px;
-}
+  font-size: 12px; }
+
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-}
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); }
+
 .footer {
   background-color: rgba(36, 35, 35, 0.432);
   padding: 5px;
@@ -179,12 +155,11 @@ body {
   height: 120px;
   overflow: hidden;
   text-align: center;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .body-contactos {
-  background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/07/15/15631836225096.jpg);
-}
+  background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/07/15/15631836225096.jpg); }
+
 .cuadro-contactos {
   overflow-y: scroll;
   width: 80vw;
@@ -201,57 +176,48 @@ body {
   justify-content: space-around;
   background-color: #12418893;
   border-radius: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    
-}
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
 .cuadro-contactos legend {
   font-size: 35px;
-  font-weight: 450;
-}
+  font-weight: 450; }
+
 .cuadro2 {
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 .cuadro-contactos fieldset {
-  border: #12418838;
-}
+  border: #12418838; }
 
 .aboutUs-fondo {
   background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/04/montana-wallpaper-1920x1080-8.jpg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
 .acerca_de {
   color: white;
-  font-size: 20px;
-}
+  font-size: 20px; }
+
 .acerca_de p {
   font-weight: 450;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 #logo {
-  width: 50px;
-}
+  width: 50px; }
+
 #cuadrado-aboutUs {
   width: 80vw;
   height: 80vh;
-
+  padding: 40px;
   border-radius: 10px;
   margin: auto;
   margin-top: 20px;
   background-color: #12418877;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
+
 .fotos-aboutUs {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .menu-button {
   position: absolute;
@@ -261,159 +227,106 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
-}
+  height: 21px; }
 
 .menu-button .opciones {
   height: 3px;
   width: 100%;
   background-color: white;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 /* HOME - media 1250px */
-
-@media (max-width: 1250px){
-
+@media (max-width: 1250px) {
   /** CUADRADO_CARTAS - HOME   **/
-  #cuadrado{
+  #cuadrado {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%; 
-  }
-/** CUADRADO_ACERCA_DE - ABOUT US   **/
+    grid-template-rows: 50% 50%; }
+  /** CUADRADO_ACERCA_DE - ABOUT US   **/
   .acerca_de {
-    
-    font-size:large;
+    font-size: large;
     width: 60vw;
     height: 500px;
-
-    
     margin: auto;
-    margin-top: 50px;
-  }
+    margin-top: 50px; }
   .acerca_de p {
-    overflow:auto;
+    overflow: auto;
     text-align: left;
-    margin-top: 30px;
-  }
-
+    margin-top: 30px; }
   .fotos-aboutUs {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-  }
-
+    padding: 5px; }
   .fotos-aboutUs img {
     width: 75vw;
-    height: 300px;
-  }
-/** CUADRO_FIELDSET - CONTACTS    **/
-#fondoContactos{
-  width: -100vw;
-  height: 80vh;
-  font-size: 25px;
-  margin-top: 15px;
-  
-}
-
-  }
+    height: 300px; }
+  /** CUADRO_FIELDSET - CONTACTS    **/
+  #fondoContactos {
+    width: -100vw;
+    height: 80vh;
+    font-size: 25px;
+    margin-top: 15px; } }
 
 @media (max-width: 1100px) {
   textarea {
     width: 80%;
-    max-width: 900px;
-  }
-  #fondoContactos{
+    max-width: 900px; }
+  #fondoContactos {
     width: -100vw;
     height: 80vh;
     font-size: 20px;
-    margin-top: 10px;
-  }
-}
+    margin-top: 10px; } }
 
-@media (max-width: 950px){
-  #fondoContactos{
+@media (max-width: 950px) {
+  #fondoContactos {
     width: 100vw;
     height: 60vh;
-    font-size: 15px;
-    
-  }
-
+    font-size: 15px; }
   .cuadro2 {
     font-weight: 400;
     display: grid;
     align-items: center;
-    margin-left: 5px;
-  }
-}
-
-
-
+    margin-left: 5px; } }
 
 @media (max-width: 800px) {
   #cuadrado {
-    
- 
-    
     grid-template-columns: 100%;
     grid-template-rows: 29.2% 29.3% 29.3%;
-    justify-items:center; 
+    justify-items: center;
     margin-bottom: 100px;
-    height: 2000px;
-  }
-
+    height: 2000px; }
   .acerca_de {
-    
-    font-size:medium;
+    font-size: medium;
     width: 60vw;
     height: 1300px;
-
-    
     margin: auto;
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
   .acerca_de p {
     overflow: hidden;
     text-align: center;
-    margin-top: 10px;
-  }
-
+    margin-top: 10px; }
   .fotos-aboutUs {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-  }
-
+    padding: 5px; }
   .fotos-aboutUs img {
     width: 75vw;
-    height: 150px;
-  }
-}
+    height: 150px; } }
 
 @media (max-width: 700px) {
-  legend{
-    font-size: 20px;
-  }
-  #cuadrado{
+  legend {
+    font-size: 20px; }
+  #cuadrado {
     height: 2000px;
-    width: 90%;
-  }
-
-
+    width: 90%; }
   label.logo {
     font-size: 30px;
-    padding-left: 16px;
-  }
+    padding-left: 16px; }
   nav ul li a {
-    font-size: 16px;
-  }
-
+    font-size: 16px; }
   .checkbtn {
-    margin-right: -50px;
-  }
-
+    margin-right: -50px; }
   .cuadro2 {
     width: 40vw;
     height: 570px;
@@ -422,20 +335,16 @@ body {
     flex-wrap: wrap;
     overflow: visible;
     align-items: center;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; }
   .cuadro-texto {
     background-color: white;
     color: black;
     line-height: 15px;
     height: 80px;
     width: 50vw;
-
     border-radius: 10px;
     border: 2px solid transparent;
-    outline: none;
-  }
-}
+    outline: none; } }
 
 /** ABOUT US **/
 @media (max-width: 400px) {
@@ -444,28 +353,19 @@ body {
     font-size: 12.5px;
     width: 60vw;
     height: 1300px;
-
     border-radius: 5px;
     margin: auto;
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
   .acerca_de p {
     font-weight: 650;
     overflow: hidden;
     text-align: center;
-    margin-top: 10px;
-  }
-
+    margin-top: 10px; }
   .fotos-aboutUs {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-  }
-
+    padding: 5px; }
   .fotos-aboutUs img {
     width: 75vw;
-    height: 150px;
-  }
-}
-
+    height: 150px; } }
